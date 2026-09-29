@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BookTranslator（书译）是一款面向图片书籍的 Windows 本地 OCR 与悬浮翻译工具。">
+  <meta name="theme-color" content="#f7f9fc">
+  <title>BookTranslator · 书译</title>
+  <link rel="icon" href="assets/book-translator-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="BookTranslator 首页">
+      <img src="assets/book-translator-icon.png" alt="" width="38" height="38">
+      <span>BookTranslator</span>
+    </a>
+    <nav aria-label="页面导航">
+      <a href="#features">功能</a>
+      <a href="#privacy">隐私</a>
+      <a href="#story">产品思考</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Windows OCR · Screenshot & Live Translation</p>
+        <h1 id="hero-title">读图片书，<br><span>少一点打断。</span></h1>
+        <p class="hero-description">
+          书译是一款面向图片书籍的 Windows 屏幕 OCR 与悬浮翻译工具。
+          框选文字即可阅读译文，也可以让翻译跟随目标窗口与页面变化。
+        </p>
+        <div class="actions">
+          <a class="button button-primary" href="https://github.com/schneehunter8-dev/BookTranslator/releases/latest/download/BookTranslator.exe" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 18v2h14v-2"/></svg>
+            下载 Windows 版
+          </a>
+          <a class="button button-secondary" href="#how-it-works">查看使用方式</a>
+        </div>
+        <div class="release-meta" aria-label="版本信息">
+          <span>v1.0.0</span><i></i><span>176.8 MiB</span><i></i><span>2026.07</span>
+        </div>
+      </div>
+
+      <div class="product-visual" aria-label="BookTranslator 产品概念展示">
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+        <div class="app-card">
+          <div class="app-card-top">
+            <img src="assets/book-translator-icon.png" alt="BookTranslator 图标" width="84" height="84">
+            <div>
+              <strong>书译</strong>
+              <span>正在翻译当前书页</span>
+            </div>
+            <span class="status-pill">就绪</span>
+          </div>
+          <div class="translation-card">
+            <span class="language">日本語 → 简体中文</span>
+            <p class="source">物語は、静かな午後から始まった。</p>
+            <p class="translation">故事从一个安静的午后开始。</p>
+          </div>
+          <div class="shortcut-row">
+            <span>截图翻译</span>
+            <kbd>Ctrl</kbd><b>+</b><kbd>Shift</kbd><b>+</b><kbd>Space</kbd>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="产品特点概览">
+      <div><strong>本地 OCR</strong><span>书页图片不上传</span></div>
+      <div><strong>双模式</strong><span>截图与实时窗口翻译</span></div>
+      <div><strong>原文可复制</strong><span>翻译失败也保留识别结果</span></div>
+    </section>
+
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="section-heading">
+        <p class="eyebrow">Built for uninterrupted reading</p>
+        <h2 id="features-title">围绕阅读过程，而不是工具本身</h2>
+        <p>减少切换窗口、复制粘贴和重复识别，让翻译尽量留在原来的阅读位置。</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-wide">
+          <span class="feature-index">01</span>
+          <h3>框选即译</h3>
+          <p>按下快捷键框选书页区域，OCR 原文与译文以轻量悬浮窗显示，并可分别复制。</p>
+          <div class="mini-flow" aria-hidden="true">
+            <span>快捷键</span><b>→</b><span>框选</span><b>→</b><span>本地识别</span><b>→</b><span>悬浮译文</span>
+          </div>
+        </article>
+        <article class="feature-card">
+          <span class="feature-index">02</span>
+          <h3>实时窗口翻译</h3>
+          <p>选择目标窗口后，工具会跟随页面变化识别可见文字；切换窗口时，覆盖层会自动隐藏。</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-index">03</span>
+          <h3>确认后再显示</h3>
+          <p>等待滚动停止后识别并校验文本，减少旧内容、重复内容和低置信度结果干扰阅读。</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-index">04</span>
+          <h3>页面状态缓存</h3>
+          <p>返回近期读过的页面时，可恢复已经确认的译文，减少重复等待。</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-index">05</span>
+          <h3>书籍排版适配</h3>
+          <p>复制和翻译前合并书籍排版产生的硬换行，让句子更连贯。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section privacy-section" id="privacy" aria-labelledby="privacy-title">
+      <div class="privacy-card">
+        <div class="privacy-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.6 2.8 8.2 7 10 4.2-1.8 7-5.4 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <div>
+          <p class="eyebrow">Privacy by design</p>
+          <h2 id="privacy-title">图片留在本机，联网由你决定</h2>
+          <p>OCR 在本机完成，不上传书页截图。只有识别后的文字会在首次明确授权后用于在线翻译；拒绝后不发送文字，也不会反复提醒。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workflow-section" id="how-it-works" aria-labelledby="workflow-title">
+      <div class="section-heading compact">
+        <p class="eyebrow">Three steps</p>
+        <h2 id="workflow-title">开始阅读</h2>
+      </div>
+      <ol class="steps">
+        <li><span>1</span><div><strong>启动书译</strong><p>在主窗口选择译文语言。</p></div></li>
+        <li><span>2</span><div><strong>选择方式</strong><p>使用快捷键框选，或从托盘菜单选择实时翻译窗口。</p></div></li>
+        <li><span>3</span><div><strong>继续阅读</strong><p>查看悬浮译文，需要时复制原文或译文。</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section story-section" id="story" aria-labelledby="story-title">
+      <div class="story-copy">
+        <p class="eyebrow">Product thinking</p>
+        <h2 id="story-title">从一个具体阅读问题出发</h2>
+        <p>图片书籍无法直接复制文字，传统流程需要反复截图、切换应用和粘贴。书译尝试把 OCR、翻译和原文保留整合进同一条阅读路径。</p>
+      </div>
+      <div class="decision-list">
+        <div><span>需求</span><p>减少图片阅读过程中的窗口切换和手工操作。</p></div>
+        <div><span>取舍</span><p>优先保证内容可信与隐私可控，而不是追求未经校验的即时覆盖。</p></div>
+        <div><span>验证</span><p>通过固定截图和实时滚动场景，持续处理重复、错位和状态反馈问题。</p></div>
+      </div>
+    </section>
+
+    <section class="download-section" aria-labelledby="download-title">
+      <img src="assets/book-translator-icon.png" alt="" width="72" height="72">
+      <div>
+        <h2 id="download-title">BookTranslator for Windows</h2>
+        <p>单文件版本，无需单独安装运行环境。</p>
+      </div>
+      <a class="button button-primary" href="https://github.com/schneehunter8-dev/BookTranslator/releases/latest/download/BookTranslator.exe" rel="noopener noreferrer">下载 v1.0.0</a>
+    </section>
+
+    <section class="checksum" aria-label="文件校验信息">
+      <div><span>文件</span><code>BookTranslator.exe</code></div>
+      <div><span>SHA-256</span><code>9C442CB867E437476859D79097D6765DEA6433C1EBF99F749A3C27693B4ECC5F</code></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand">
+      <img src="assets/book-translator-icon.png" alt="" width="30" height="30">
+      <span>BookTranslator · 书译</span>
+    </div>
+    <p>一个围绕图片书籍阅读体验完成的个人产品实践。</p>
+  </footer>
+</body>
+</html>

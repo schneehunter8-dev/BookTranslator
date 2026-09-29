@@ -19,6 +19,10 @@ OCR 在本机完成，不上传书页截图。只有识别后的文字会在用�
 
 请前往 [Releases](../../releases/latest) 下载 `BookTranslator.exe`。
 
+## 作品展示
+
+[查看 BookTranslator 产品介绍页](https://schneehunter8-dev.github.io/BookTranslator/)。如果展示页无法打开，可以直接在本仓库阅读功能、隐私说明，并通过上方 Releases 下载。
+
 ## 文件校验
 
 ```text
